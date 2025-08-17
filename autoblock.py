@@ -365,6 +365,7 @@ def add_ndarray(m):
     m.add(lambda x: np.min(x), nd.array, float, "np_min_float")
     m.add(lambda x: np.max(x), nd.array, int, "np_max_int")
     m.add(lambda x: np.max(x), nd.array, float, "np_max_float")
+    m.add(lambda x: np.negative(x), nd.array, nd.array, "np_negative")
 
 def add_str(m):
     m.add(lambda x: int(x), str, int, "str_int")
