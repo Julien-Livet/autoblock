@@ -299,6 +299,7 @@ def add_list(m):
     m.add(lambda x, y: x + y, (list, list), list, "list_concat")
     m.add(lambda x: [int(xx) for xx in x], list, list, "list_int")
     m.add(lambda x: [float(xx) for xx in x], list, list, "list_float")
+    m.add(lambda x: [str(xx) for xx in x], list, list, "list_str")
     m.add(lambda x, y: (y, x), (list, list), (list, list), "list_swap")
     m.add(lambda x: all(x), list, bool, "list_all")
     m.add(lambda x: any(x), list, bool, "list_any")
